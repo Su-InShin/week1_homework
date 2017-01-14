@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var Image1show: UIImageView!
+    var i = 0
+    @IBAction func PushButton(_ sender: Any) {
+        if(i == 0){
+            Image1show.image = UIImage(named: "Image2.jpg")
+            i += 1
+        }else{
+            Image1show.image = UIImage(named: "Image1.jpg")
+            i = 0
+        }
+    }
 
 }
 
